@@ -1,0 +1,50 @@
+main{
+    section{
+        .container{
+            .hero__wrapper{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-gap: 100px;
+                align-items: center;
+                padding: 70px 0;
+                .hero__text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 35px;
+                    h1{
+                        font-size: 38px;
+                        font-weight: 700;
+                    }
+                    p{
+                        color: var(--text-color);
+                        font-size: 15px;
+                    }
+                    .hero__btns{
+                        display: flex;
+                        gap: 30px;
+                        button{
+                            padding: 20px 30px;
+                            border-radius: var(--radius);
+                            border:1px solid var(--main-color);
+                            color: var(--white);
+                            background-color: var(--main-color);
+                            transition: .5s;
+                            cursor: pointer;
+                            &:hover{
+                                box-shadow: 0 0 8px var(--main-color);
+                                background-color: var(--white);
+                                color: var(--main-color);
+                            }
+                        }
+                    }
+                }
+                .hero__img{
+                    img{
+                        width: 100%;    
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+}
